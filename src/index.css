@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'proxima-regular';
+  src: local('ProximaNova-Regular'), url(./fonts/ProximaNova-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-bold';
+  src: local('Proxima Nova Bold'), url('./fonts/Proxima Nova Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-alt-bold';
+  src: local('Promixa Nova Alt Bold'), url('./fonts/Proxima Nova Alt Bold.otf') format('opentype');
+}
+
+:root {
+  --theme-color: #2995DA;
+  --border-color: #E2E2E2;
+
+  --light-text: #aaa;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #99999999;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #99999999;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #99999999;
+}
+
+body {
+  font-family: 'proxima-regular';
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p, button, input {
+  font-family: 'proxima-regular';
+}
+
+h1, h2, h3 {
+  font-family: 'proxima-bold';
+}
+
+.bold, strong {
+  font-family: 'proxima-bold';
+}
+
+.alt-bold {
+  font-family: 'proxima-alt-bold';
+}
